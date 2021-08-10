@@ -9,9 +9,15 @@ import Foundation
 
 class Webservice {
 
-    func getCommits(url: URL, completion: ([Any]?) -> ()) {
+    func getCommits(url: URL, completion: @escaping ([CommitContainer]?) -> ()) {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
-            print(data)
+            if let error = error {
+                print(error.localizedDescription)
+                completion(nil)
+            } else if let data = data {
+                let commits = try? JSONDecoder().decode([CommitContainer].self, from: data)
+                completion(commits)
+            }
         }.resume()
     }
 }
