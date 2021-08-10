@@ -12,7 +12,14 @@ class CommitsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setup()
+    }
+    
+    func setup() {
+        let url = URL(string: "https://api.github.com/repos/abduranjum/Top_100_Albums_on_iTunes/commits")!
+        Webservice().getCommits(url: url) { _ in
+            
+        }
     }
 
 }

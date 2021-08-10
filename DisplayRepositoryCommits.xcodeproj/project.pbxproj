@@ -13,6 +13,7 @@
 		DAF5742C26C2EF76007F3DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF5742A26C2EF76007F3DD1 /* Main.storyboard */; };
 		DAF5742E26C2EF79007F3DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF5742D26C2EF79007F3DD1 /* Assets.xcassets */; };
 		DAF5743126C2EF79007F3DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF5742F26C2EF79007F3DD1 /* LaunchScreen.storyboard */; };
+		DAF5743B26C2F012007F3DD1 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5743A26C2F012007F3DD1 /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DAF5742D26C2EF79007F3DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAF5743026C2EF79007F3DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAF5743226C2EF79007F3DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF5743A26C2F012007F3DD1 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF5743F26C30DA7007F3DD1 /* Views */,
+				DAF5743926C2EFA9007F3DD1 /* Services */,
 				DAF5742426C2EF76007F3DD1 /* AppDelegate.swift */,
 				DAF5742626C2EF76007F3DD1 /* SceneDelegate.swift */,
 				DAF5742D26C2EF79007F3DD1 /* Assets.xcassets */,
@@ -64,6 +67,14 @@
 				DAF5743226C2EF79007F3DD1 /* Info.plist */,
 			);
 			path = DisplayRepositoryCommits;
+			sourceTree = "<group>";
+		};
+		DAF5743926C2EFA9007F3DD1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5743A26C2F012007F3DD1 /* Webservice.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		DAF5743D26C2F245007F3DD1 /* Controllers */ = {
@@ -155,6 +166,7 @@
 			files = (
 				DAF5742926C2EF76007F3DD1 /* CommitsViewController.swift in Sources */,
 				DAF5742526C2EF76007F3DD1 /* AppDelegate.swift in Sources */,
+				DAF5743B26C2F012007F3DD1 /* Webservice.swift in Sources */,
 				DAF5742726C2EF76007F3DD1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
