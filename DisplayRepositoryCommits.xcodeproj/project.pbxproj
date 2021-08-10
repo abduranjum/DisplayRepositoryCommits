@@ -19,6 +19,7 @@
 		DAF5745326C328ED007F3DD1 /* CommitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5745226C328ED007F3DD1 /* CommitsViewModel.swift */; };
 		DAF5745626C32CFB007F3DD1 /* CommitContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5745526C32CFB007F3DD1 /* CommitContainer.swift */; };
 		DAF5745926C32D18007F3DD1 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5745826C32D18007F3DD1 /* Author.swift */; };
+		DAF5745E26C33C6A007F3DD1 /* CommitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5745D26C33C6A007F3DD1 /* CommitTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DAF5745226C328ED007F3DD1 /* CommitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsViewModel.swift; sourceTree = "<group>"; };
 		DAF5745526C32CFB007F3DD1 /* CommitContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitContainer.swift; sourceTree = "<group>"; };
 		DAF5745826C32D18007F3DD1 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		DAF5745D26C33C6A007F3DD1 /* CommitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		DAF5743F26C30DA7007F3DD1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DAF5745C26C33C4F007F3DD1 /* Cells */,
 				DAF5743D26C2F245007F3DD1 /* Controllers */,
 				DAF5742A26C2EF76007F3DD1 /* Main.storyboard */,
 			);
@@ -123,6 +126,14 @@
 				DAF5745226C328ED007F3DD1 /* CommitsViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DAF5745C26C33C4F007F3DD1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5745D26C33C6A007F3DD1 /* CommitTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF5745E26C33C6A007F3DD1 /* CommitTableViewCell.swift in Sources */,
 				DAF5744A26C317B6007F3DD1 /* Commit.swift in Sources */,
 				DAF5744F26C31E71007F3DD1 /* CommitViewModel.swift in Sources */,
 				DAF5742926C2EF76007F3DD1 /* CommitsViewController.swift in Sources */,

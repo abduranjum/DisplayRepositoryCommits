@@ -16,13 +16,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QL1-79-sIR">
-                                <rect key="frame" x="0.0" y="28" width="428" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommitTableViewCell" id="QL1-79-sIR" customClass="CommitTableViewCell" customModule="DisplayRepositoryCommits" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="428" height="74.333335876464844"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QL1-79-sIR" id="V9G-lO-dWd">
-                                    <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="428" height="74.333335876464844"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggx-V0-GgL">
+                                            <rect key="frame" x="5" y="5" width="418" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A10-7d-wKh">
+                                            <rect key="frame" x="5" y="55.333333333333258" width="418" height="20.333333333333314"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xF-RE-phy">
+                                            <rect key="frame" x="5" y="30.333333333333258" width="418" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="7xF-RE-phy" secondAttribute="trailing" constant="5" id="2YV-76-r6w"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ggx-V0-GgL" secondAttribute="trailing" constant="5" id="5LL-sG-r4P"/>
+                                        <constraint firstItem="A10-7d-wKh" firstAttribute="top" secondItem="7xF-RE-phy" secondAttribute="bottom" constant="5" id="5cF-Oi-f4V"/>
+                                        <constraint firstAttribute="trailing" secondItem="A10-7d-wKh" secondAttribute="trailing" constant="5" id="BYO-Ka-BBU"/>
+                                        <constraint firstItem="Ggx-V0-GgL" firstAttribute="leading" secondItem="V9G-lO-dWd" secondAttribute="leading" constant="5" id="GU4-Qo-bne"/>
+                                        <constraint firstItem="A10-7d-wKh" firstAttribute="top" secondItem="7xF-RE-phy" secondAttribute="bottom" constant="5" id="Gm3-nZ-mbw"/>
+                                        <constraint firstAttribute="bottom" secondItem="A10-7d-wKh" secondAttribute="bottom" constant="5" id="I0z-uv-zRz"/>
+                                        <constraint firstItem="7xF-RE-phy" firstAttribute="top" secondItem="Ggx-V0-GgL" secondAttribute="bottom" constant="5" id="NgP-qM-rum"/>
+                                        <constraint firstItem="7xF-RE-phy" firstAttribute="leading" secondItem="V9G-lO-dWd" secondAttribute="leading" constant="5" id="OKT-m4-MWe"/>
+                                        <constraint firstItem="Ggx-V0-GgL" firstAttribute="top" secondItem="V9G-lO-dWd" secondAttribute="top" constant="5" id="TcL-8T-Lqi"/>
+                                        <constraint firstItem="A10-7d-wKh" firstAttribute="leading" secondItem="V9G-lO-dWd" secondAttribute="leading" constant="5" id="jgb-Ou-SfS"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="authorLabel" destination="Ggx-V0-GgL" id="h5a-zB-f8O"/>
+                                    <outlet property="hashLabel" destination="7xF-RE-phy" id="O8h-Ke-ttx"/>
+                                    <outlet property="messageLabel" destination="A10-7d-wKh" id="Ahw-Z3-aGP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
