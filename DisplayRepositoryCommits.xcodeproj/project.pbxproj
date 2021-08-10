@@ -15,6 +15,8 @@
 		DAF5743126C2EF79007F3DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF5742F26C2EF79007F3DD1 /* LaunchScreen.storyboard */; };
 		DAF5743B26C2F012007F3DD1 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5743A26C2F012007F3DD1 /* Webservice.swift */; };
 		DAF5744A26C317B6007F3DD1 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5744926C317B6007F3DD1 /* Commit.swift */; };
+		DAF5744F26C31E71007F3DD1 /* CommitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5744E26C31E71007F3DD1 /* CommitViewModel.swift */; };
+		DAF5745326C328ED007F3DD1 /* CommitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5745226C328ED007F3DD1 /* CommitsViewModel.swift */; };
 		DAF5745626C32CFB007F3DD1 /* CommitContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5745526C32CFB007F3DD1 /* CommitContainer.swift */; };
 		DAF5745926C32D18007F3DD1 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5745826C32D18007F3DD1 /* Author.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,8 @@
 		DAF5743226C2EF79007F3DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAF5743A26C2F012007F3DD1 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		DAF5744926C317B6007F3DD1 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		DAF5744E26C31E71007F3DD1 /* CommitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitViewModel.swift; sourceTree = "<group>"; };
+		DAF5745226C328ED007F3DD1 /* CommitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsViewModel.swift; sourceTree = "<group>"; };
 		DAF5745526C32CFB007F3DD1 /* CommitContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitContainer.swift; sourceTree = "<group>"; };
 		DAF5745826C32D18007F3DD1 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +70,7 @@
 			children = (
 				DAF5744826C31625007F3DD1 /* Models */,
 				DAF5743F26C30DA7007F3DD1 /* Views */,
+				DAF5744D26C31E3C007F3DD1 /* ViewModels */,
 				DAF5743926C2EFA9007F3DD1 /* Services */,
 				DAF5742426C2EF76007F3DD1 /* AppDelegate.swift */,
 				DAF5742626C2EF76007F3DD1 /* SceneDelegate.swift */,
@@ -109,6 +114,15 @@
 				DAF5745826C32D18007F3DD1 /* Author.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DAF5744D26C31E3C007F3DD1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5744E26C31E71007F3DD1 /* CommitViewModel.swift */,
+				DAF5745226C328ED007F3DD1 /* CommitsViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,12 +196,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAF5744A26C317B6007F3DD1 /* Commit.swift in Sources */,
+				DAF5744F26C31E71007F3DD1 /* CommitViewModel.swift in Sources */,
 				DAF5742926C2EF76007F3DD1 /* CommitsViewController.swift in Sources */,
 				DAF5745926C32D18007F3DD1 /* Author.swift in Sources */,
 				DAF5742526C2EF76007F3DD1 /* AppDelegate.swift in Sources */,
 				DAF5745626C32CFB007F3DD1 /* CommitContainer.swift in Sources */,
 				DAF5743B26C2F012007F3DD1 /* Webservice.swift in Sources */,
 				DAF5742726C2EF76007F3DD1 /* SceneDelegate.swift in Sources */,
+				DAF5745326C328ED007F3DD1 /* CommitsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
