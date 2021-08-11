@@ -17,6 +17,7 @@ class CommitsViewController: UITableViewController {
     }
     
     func setup() {
+        //Obtained the following URL by following the steps at: https://docs.github.com/en/rest/reference/repos
         let url = URL(string: "https://api.github.com/repos/abduranjum/Top_100_Albums_on_iTunes/commits")!
         Webservice().getCommits(url: url) { commitContainers in
             if let commitContainers = commitContainers {
