@@ -48,7 +48,8 @@ extension CommitsViewController {
         cell.authorLabel.text = commitViewModel?.author
         cell.hashLabel.text = commitViewModel?.hash
         cell.messageLabel.text = commitViewModel?.message
-        
+        cell.dateLabel.text = commitViewModel?.date
+
         return cell
     }
 }

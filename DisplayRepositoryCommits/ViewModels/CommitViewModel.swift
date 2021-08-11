@@ -29,5 +29,9 @@ extension CommitViewModel {
     var message: String {
         self.commitContainer.commit.message
     }
+    
+    var date: String {
+        return self.commitContainer.commit.author.date
+    }
 }
 
