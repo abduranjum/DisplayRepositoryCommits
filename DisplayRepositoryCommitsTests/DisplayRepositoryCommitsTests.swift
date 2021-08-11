@@ -54,5 +54,4 @@ class DisplayRepositoryCommitsTests: XCTestCase {
             _ = CommitViewModel(commitContainer: commitContainer)
          }
     }
-
 }

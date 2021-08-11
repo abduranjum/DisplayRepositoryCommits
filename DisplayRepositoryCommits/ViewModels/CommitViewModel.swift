@@ -30,4 +30,3 @@ extension CommitViewModel {
         self.commitContainer.commit.message
     }
 }
-

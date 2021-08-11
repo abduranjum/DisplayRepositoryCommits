@@ -21,4 +21,3 @@ class Webservice {
         }.resume()
     }
 }
-

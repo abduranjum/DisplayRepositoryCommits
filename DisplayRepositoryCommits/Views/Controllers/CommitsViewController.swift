@@ -53,4 +53,3 @@ extension CommitsViewController {
         return cell
     }
 }
-
