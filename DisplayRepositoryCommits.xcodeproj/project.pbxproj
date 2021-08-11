@@ -20,7 +20,18 @@
 		DAF5745626C32CFB007F3DD1 /* CommitContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5745526C32CFB007F3DD1 /* CommitContainer.swift */; };
 		DAF5745926C32D18007F3DD1 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5745826C32D18007F3DD1 /* Author.swift */; };
 		DAF5745E26C33C6A007F3DD1 /* CommitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5745D26C33C6A007F3DD1 /* CommitTableViewCell.swift */; };
+		DAF5747126C41DED007F3DD1 /* DisplayRepositoryCommitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5747026C41DED007F3DD1 /* DisplayRepositoryCommitsTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAF5747326C41DED007F3DD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAF5741926C2EF76007F3DD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAF5742026C2EF76007F3DD1;
+			remoteInfo = DisplayRepositoryCommits;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DAF5742126C2EF76007F3DD1 /* DisplayRepositoryCommits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisplayRepositoryCommits.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,10 +49,20 @@
 		DAF5745526C32CFB007F3DD1 /* CommitContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitContainer.swift; sourceTree = "<group>"; };
 		DAF5745826C32D18007F3DD1 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		DAF5745D26C33C6A007F3DD1 /* CommitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitTableViewCell.swift; sourceTree = "<group>"; };
+		DAF5746E26C41DED007F3DD1 /* DisplayRepositoryCommitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisplayRepositoryCommitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF5747026C41DED007F3DD1 /* DisplayRepositoryCommitsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayRepositoryCommitsTests.swift; sourceTree = "<group>"; };
+		DAF5747226C41DED007F3DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DAF5741E26C2EF76007F3DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF5746B26C41DED007F3DD1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF5742326C2EF76007F3DD1 /* DisplayRepositoryCommits */,
+				DAF5746F26C41DED007F3DD1 /* DisplayRepositoryCommitsTests */,
 				DAF5742226C2EF76007F3DD1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF5742126C2EF76007F3DD1 /* DisplayRepositoryCommits.app */,
+				DAF5746E26C41DED007F3DD1 /* DisplayRepositoryCommitsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +159,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		DAF5746F26C41DED007F3DD1 /* DisplayRepositoryCommitsTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5747026C41DED007F3DD1 /* DisplayRepositoryCommitsTests.swift */,
+				DAF5747226C41DED007F3DD1 /* Info.plist */,
+			);
+			path = DisplayRepositoryCommitsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +188,24 @@
 			productReference = DAF5742126C2EF76007F3DD1 /* DisplayRepositoryCommits.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DAF5746D26C41DED007F3DD1 /* DisplayRepositoryCommitsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF5747726C41DED007F3DD1 /* Build configuration list for PBXNativeTarget "DisplayRepositoryCommitsTests" */;
+			buildPhases = (
+				DAF5746A26C41DED007F3DD1 /* Sources */,
+				DAF5746B26C41DED007F3DD1 /* Frameworks */,
+				DAF5746C26C41DED007F3DD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAF5747426C41DED007F3DD1 /* PBXTargetDependency */,
+			);
+			name = DisplayRepositoryCommitsTests;
+			productName = DisplayRepositoryCommitsTests;
+			productReference = DAF5746E26C41DED007F3DD1 /* DisplayRepositoryCommitsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,6 +217,10 @@
 				TargetAttributes = {
 					DAF5742026C2EF76007F3DD1 = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					DAF5746D26C41DED007F3DD1 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = DAF5742026C2EF76007F3DD1;
 					};
 				};
 			};
@@ -184,6 +238,7 @@
 			projectRoot = "";
 			targets = (
 				DAF5742026C2EF76007F3DD1 /* DisplayRepositoryCommits */,
+				DAF5746D26C41DED007F3DD1 /* DisplayRepositoryCommitsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -196,6 +251,13 @@
 				DAF5743126C2EF79007F3DD1 /* LaunchScreen.storyboard in Resources */,
 				DAF5742E26C2EF79007F3DD1 /* Assets.xcassets in Resources */,
 				DAF5742C26C2EF76007F3DD1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF5746C26C41DED007F3DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +281,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAF5746A26C41DED007F3DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF5747126C41DED007F3DD1 /* DisplayRepositoryCommitsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAF5747426C41DED007F3DD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAF5742026C2EF76007F3DD1 /* DisplayRepositoryCommits */;
+			targetProxy = DAF5747326C41DED007F3DD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DAF5742A26C2EF76007F3DD1 /* Main.storyboard */ = {
@@ -393,6 +471,44 @@
 			};
 			name = Release;
 		};
+		DAF5747526C41DED007F3DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DisplayRepositoryCommitsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ama.DisplayRepositoryCommitsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DisplayRepositoryCommits.app/DisplayRepositoryCommits";
+			};
+			name = Debug;
+		};
+		DAF5747626C41DED007F3DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DisplayRepositoryCommitsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ama.DisplayRepositoryCommitsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DisplayRepositoryCommits.app/DisplayRepositoryCommits";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,6 +526,15 @@
 			buildConfigurations = (
 				DAF5743626C2EF79007F3DD1 /* Debug */,
 				DAF5743726C2EF79007F3DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF5747726C41DED007F3DD1 /* Build configuration list for PBXNativeTarget "DisplayRepositoryCommitsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF5747526C41DED007F3DD1 /* Debug */,
+				DAF5747626C41DED007F3DD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
